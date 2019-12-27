@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+* {
+  color: white;
+}
+.ctn {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.game-inner {
+  width: 60%;
+  line-height: 200%;
+  margin: auto;
+}
+
+.game-ctn {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  margin-top: 20%;
+}
+
+.input-ctn {
+  width: 60%;
+  margin: auto;
+  margin-top: 10%;
+  border-bottom: white solid 1px;
+}
+
+.input-field {
+  font-size: 30px;
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.input-field:focus {
+  outline-width: 0;
+}
+
+.pos {
+  color: green !important;
+}
+
+.neg {
+  background-color: red;
+}
+
+.welcome {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  width: 25%;
+}
+
+#welcome-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.results {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 30px;
+}
