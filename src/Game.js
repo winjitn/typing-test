@@ -17,8 +17,7 @@ class Game extends React.Component {
     "Across the street from my building, men replace the swamp cooler of an expensive restaurant with air conditioning. They drill. It scares the birds away. The windows framed by the thin walls of my apartment shake."
   ];
 
-  // rand = Math.floor(Math.random() * 9);
-  rand = 8;
+  rand = Math.floor(Math.random() * 9);
 
   input = React.createRef();
 
