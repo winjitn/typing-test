@@ -7,12 +7,18 @@ class Game extends React.Component {
   text = [
     "Its deep darkness was total but something about its speluncar acoustics fortold, clearing its throat hollowly, great things, and he hurried to his own quarters to fetch a couple of flashlights and a pedometer.",
     "The question is in a way meaningless, she knows, but one must ask. Love in such situations is rarely real. Sex is the engine, exalting and ruining people, sex and frustration. Love is what people believe is worth the path of devastation.",
-    "When I met Belle, I understood that I had just entered this second age. I also understood that I hadn’t reached the third age, in which anticipation of the loss of happiness prevents you from living.",
+    "When I met Belle, I understood that I had just entered this second age. I also understood that I hadn't reached the third age, in which anticipation of the loss of happiness prevents you from living.",
     "Your only chance of survival, if you are sincerely smitten, lies in hiding this fact from the woman you love, of feigning a casual detachment under all circumstances. What sadness there is in this simple observation!",
-    "In the hospital men’s room, as I’m washing my hands, I glance in the mirror. The man I see is not so much me as my father. When did he show up?"
+    "In the hospital men's room, as I'm washing my hands, I glance in the mirror. The man I see is not so much me as my father. When did he show up?",
+    "So I go in and take out the Gideon's Bible. My mom left her compact in the sink, so I taped it on the inside pages. That way, I could admire my new moustache without seeming vain in front of her.",
+    "Later that evening in an izakaya in Ginza over beer and yakitori, Mrs. Matsuda, slightly drunk, admitted to Mrs. Nakamoto that her husband beat her.",
+    "Three or four goats appear and start following them. They frighten him as they get closer with their horns, bells tinkling. She laughs at him. He's embarrassed. Kathleen knows goats. They had them on the farm in Galway.",
+    "Like all Kalenjin boys he ran everywhere. He ran to school. He ran home from school. He ran to gather firewood. He ran to the river to fetch water and spilt none running back. He ran but did not race. Running was not a sport. It was a way of life.",
+    "Across the street from my building, men replace the swamp cooler of an expensive restaurant with air conditioning. They drill. It scares the birds away. The windows framed by the thin walls of my apartment shake."
   ];
 
-  rand = Math.floor(Math.random() * 4);
+  // rand = Math.floor(Math.random() * 9);
+  rand = 8;
 
   input = React.createRef();
 
@@ -35,7 +41,7 @@ class Game extends React.Component {
           </span>
         );
       }
-      hold.push(<span> </span>);
+      hold.push(<span key={"awef"}> </span>);
       return hold;
     });
   }
@@ -105,11 +111,12 @@ class Game extends React.Component {
         </div>
         {this.state.done === true ? (
           <div className="results">
-            WPM:<span>{this.state.wpm}</span>
+            <div>
+              WPM:<span>{this.state.wpm}</span>
+            </div>
             <button
               onClick={() => this.props.reset(true)}
               className="ui positive button"
-              style={{ marginLeft: "20px" }}
             >
               Start Over
             </button>
